@@ -1,0 +1,1 @@
+#Gerenciador do Dracrys Store
