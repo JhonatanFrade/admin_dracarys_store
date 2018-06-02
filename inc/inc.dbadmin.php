@@ -6,14 +6,29 @@
 		define ("PASS", "");
 		define ("BASE", "dracarys_store_db");
 
-		$link = mysql_connect(HOST, USER, PASS) or die('Error mysql_connect : '.mysql_error());
+		$link = mysql_connect(HOST, USER, PASS) or  die ("Conexão falhou!");
 
-		$db_selected = mysql_select_db(BASE, $link) or die('Error mysql_select_db : '.mysql_error());
+		mysql_select_db(BASE, $link) or die ("Erro ao conectar com a base");
 
 		return $link;
 	}
 
-	function inserir($query, $link){
-		mysql_query($query, $link) or die(mysql_error());
+	function executar($query, $link){
+		$res = mysql_query($query, $link) or die(mysql_error());
+		return $res;
 	}
+
+	function mostrar($res){		
+		$vet = array();		
+		while($linha = mysql_fetch_assoc($res)){
+			$vet[] = $linha;
+		}
+		return $vet;
+	}
+
+	function num_linha($res){
+		$num = mysql_num_rows($res);
+		return $num;
+	}
+
 ?>

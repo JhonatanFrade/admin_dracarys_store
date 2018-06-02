@@ -1,0 +1,89 @@
+img:hover{
+	opacity: 0.6;
+}
+
+body{
+	/*background-image: url(img/background_01.jpg);*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+h6{
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+h6:hover{
+	background-color: #111;
+}
+
+h5{
+	color: black;
+	font-size: 18px;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 4px 20px;
+    margin: 2px 0;
+    /*display: inline-block;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h3{
+	color: black;
+	font-size: 18px;
+}
+
+h4{
+	color: black;
+	font-size: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 50%;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
